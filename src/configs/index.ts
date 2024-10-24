@@ -4,7 +4,7 @@ import { appConfig, appValidator } from './app.config';
 import { authConfig, authValidator } from './auth.config';
 import { dbConfig, dbValidator } from './database.config';
 
-const logger = Logger.get('Configs');
+const logger = Logger.get('CONFIGS');
 
 export const runValidators = async () => {
   try {
