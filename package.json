@@ -1,0 +1,48 @@
+{
+  "name": "restful-api",
+  "module": "src/main.ts",
+  "type": "module",
+  "author": {
+    "name": "Nguyen Nhu Khanh",
+    "email": "kwalker.nnk@gmail.com"
+  },
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "prod": "bun src/main.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "drizzle-kit": "^0.26.2",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "prettier": "^2.8.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@thanhhoajs/logger": "^1.0.4",
+    "@thanhhoajs/thanhhoa": "0.0.4-alpha.2",
+    "@thanhhoajs/validator": "^1.0.4",
+    "bcrypt": "^5.1.1",
+    "drizzle-orm": "^0.35.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
+    "swagger-jsdoc": "^6.2.8",
+    "uuid": "^10.0.0"
+  }
+}
