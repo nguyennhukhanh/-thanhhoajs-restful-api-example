@@ -10,6 +10,7 @@ export class UserModule {
   constructor(app: ThanhHoa) {
     const userService = new UserService();
     const sessionService = new SessionService();
+
     const authService = new AuthService(userService, sessionService);
     const userController = new UserController();
     const guard = new Guard(authService);

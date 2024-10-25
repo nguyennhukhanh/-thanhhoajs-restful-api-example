@@ -15,7 +15,7 @@ export class Guard {
   ): Promise<Response> => {
     const token = context.request.headers.get('Authorization')?.split(' ')[1];
     if (!token) {
-      return new Response('Unauthorized', { status: 401 });
+      throw new HttpException('Unauthorized', 401);
     }
 
     try {
